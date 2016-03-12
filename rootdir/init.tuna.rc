@@ -51,8 +51,6 @@ on fs
     start smc_pa_wvdrm
     start tuna_setup
     restorecon /dev/block/platform/omap/omap_hsmmc.0/by-name/radio
-    restorecon_recursive /factory
-    mount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/efs /factory ro remount
 
     # change permissions for mtd device
     chmod 0660 /dev/mtd/mtd0
